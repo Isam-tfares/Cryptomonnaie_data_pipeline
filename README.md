@@ -41,7 +41,7 @@ Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, Cassandra,
 
 ### Navigate to the project directory:
 
-`$ cd e2e-structured-streaming`
+`$ cd Cryptomonnaie_data_pipeline`
 
 ### Create an .env file in project folder and set an AIRFLOW_UID
 

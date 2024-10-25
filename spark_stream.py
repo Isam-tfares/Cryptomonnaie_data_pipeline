@@ -4,7 +4,7 @@ from datetime import datetime
 from cassandra.cluster import Cluster
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, from_json
-from pyspark.sql.types import StructType, StructField, StringType
+from pyspark.sql.types import StructType, StructField, StringType, FloatType
 
 # Configure logging
 logging.basicConfig(
@@ -17,69 +17,56 @@ logger = logging.getLogger(__name__)
 
 def create_keyspace(session):
     session.execute("""
-        CREATE KEYSPACE IF NOT EXISTS spark_streaming
+        CREATE KEYSPACE IF NOT EXISTS crypto_data
         WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 1}
         """)
-    
     logger.info("Keyspace created successfully")
 
 def create_table(session):
     session.execute("""
-        CREATE TABLE IF NOT EXISTS spark_streaming.created_users (
-            first_name TEXT,
-            last_name TEXT,
-            gender TEXT,
-            address TEXT,
-            post_code TEXT,
-            email TEXT,
-            username TEXT PRIMARY KEY,
-            dob TEXT,
-            registered_date TEXT,
-            phone TEXT,
-            picture TEXT);
-        """)
-    
+        CREATE TABLE IF NOT EXISTS crypto_data.daily_prices (
+            symbol TEXT,
+            date TEXT,
+            open FLOAT,
+            high FLOAT,
+            low FLOAT,
+            close FLOAT,
+            volume FLOAT,
+            PRIMARY KEY (symbol, date)
+        );
+    """)
     logger.info("Table created successfully")
 
 def insert_data(session, row):
     logger.info("Inserting data")
 
-    first_name = row['first_name']
-    last_name = row['last_name']
-    gender = row['gender']
-    address = row['address']
-    postcode = row['post_code']
-    email = row['email']
-    username = row['username']
-    dob = row['dob']
-    registered_date = row['registered_date']
-    phone = row['phone']
-    picture = row['picture']
+    symbol = row['symbol']
+    date = row['date']
+    open_price = row['open']
+    high_price = row['high']
+    low_price = row['low']
+    close_price = row['close']
+    volume = row['volume']
 
-    if username is None:
+    if symbol is None or date is None:
         return
 
     try:
         session.execute("""
-            INSERT INTO spark_streaming.created_users (first_name, last_name, gender, address,
-                        post_code, email, username, dob, registered_date, phone, picture)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        """, (first_name, last_name, gender, address,
-              postcode, email, username, dob, registered_date, phone, picture))
-        logger.info(f"Data inserted for {first_name} {last_name}")
+            INSERT INTO crypto_data.daily_prices (symbol, date, open, high, low, close, volume)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+        """, (symbol, date, open_price, high_price, low_price, close_price, volume))
+        logger.info(f"Data inserted for {symbol} on {date}")
 
     except Exception as e:
         logger.error(f"Error while inserting data: {e}")
-
-
-
 
 def create_spark_connection():
     s_conn = None
 
     try:
         s_conn = SparkSession.builder \
-            .appName('SparkDataStreaming') \
+            .appName('CryptoDataStreaming') \
             .config('spark.jars.packages', "com.datastax.spark:spark-cassandra-connector_2.12:3.5.1,"
                                            "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
             .config('spark.cassandra.connection.host', 'cassandra_db') \
@@ -93,25 +80,22 @@ def create_spark_connection():
     return s_conn
 
 def connect_to_kafka(spark_conn):
+    # Define schema for cryptocurrency data
     schema = StructType([
-        StructField("first_name", StringType(), False),
-        StructField("last_name", StringType(), False),
-        StructField("gender", StringType(), False),
-        StructField("address", StringType(), False),
-        StructField("post_code", StringType(), False),
-        StructField("email", StringType(), False),
-        StructField("username", StringType(), False),
-        StructField("dob", StringType(), False),
-        StructField("registered_date", StringType(), False),
-        StructField("phone", StringType(), False),
-        StructField("picture", StringType(), False)
+        StructField("symbol", StringType(), False),
+        StructField("date", StringType(), False),
+        StructField("open", FloatType(), False),
+        StructField("high", FloatType(), False),
+        StructField("low", FloatType(), False),
+        StructField("close", FloatType(), False),
+        StructField("volume", FloatType(), False)
     ])
 
     df = spark_conn \
         .readStream \
         .format("kafka") \
         .option("kafka.bootstrap.servers", "kafka:9093") \
-        .option("subscribe", "users") \
+        .option("subscribe", "crypto_prices") \
         .option("startingOffsets", "earliest") \
         .option("failOnDataLoss", "false") \
         .load() \
@@ -120,7 +104,6 @@ def connect_to_kafka(spark_conn):
         .select("data.*")
 
     return df
-
 
 def create_cassandra_connection():
     try:
