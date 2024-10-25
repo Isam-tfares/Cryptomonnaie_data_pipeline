@@ -1,0 +1,52 @@
+[2024-10-22T08:16:54.355+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-22T08:16:54.567+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api scheduled__2024-10-21T00:00:00+00:00 [queued]>
+[2024-10-22T08:16:54.608+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api scheduled__2024-10-21T00:00:00+00:00 [queued]>
+[2024-10-22T08:16:54.616+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-10-22T08:16:54.668+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2024-10-21 00:00:00+00:00
+[2024-10-22T08:16:54.716+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'user_automation', 'stream_data_from_api', 'scheduled__2024-10-21T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/kafka_stream.py', '--cfg-path', '/tmp/tmpyyllgeey']
+[2024-10-22T08:16:54.728+0000] {standard_task_runner.py:91} INFO - Job 39: Subtask stream_data_from_api
+[2024-10-22T08:16:54.726+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=226) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-22T08:16:54.734+0000] {standard_task_runner.py:64} INFO - Started process 227 to run task
+[2024-10-22T08:16:54.894+0000] {task_command.py:426} INFO - Running <TaskInstance: user_automation.stream_data_from_api scheduled__2024-10-21T00:00:00+00:00 [running]> on host f21aa4d9a782
+[2024-10-22T08:16:55.277+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='user_automation' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2024-10-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-21T00:00:00+00:00'
+[2024-10-22T08:16:55.283+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-22T08:17:01.643+0000] {conn.py:1276} WARNING - DNS lookup failed for broker:9092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-10-22T08:17:01.646+0000] {conn.py:297} ERROR - DNS lookup failed for broker:9092 (0)
+[2024-10-22T08:17:01.647+0000] {conn.py:957} INFO - Probing node bootstrap-0 broker version
+[2024-10-22T08:17:04.949+0000] {conn.py:1276} WARNING - DNS lookup failed for broker:9092, exception was [Errno -2] Name or service not known. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+[2024-10-22T08:17:04.952+0000] {conn.py:297} ERROR - DNS lookup failed for broker:9092 (0)
+[2024-10-22T08:17:04.954+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-22T08:17:04.956+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/kafka_stream.py", line 44, in stream_data
+    producer = KafkaProducer(bootstrap_servers='broker:9092', max_block_ms=5000)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kafka/producer/kafka.py", line 383, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kafka/client_async.py", line 234, in __init__
+    self.config['api_version'] = self.check_version(timeout=check_timeout)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kafka/client_async.py", line 929, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2024-10-22T08:17:05.007+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=user_automation, task_id=stream_data_from_api, run_id=scheduled__2024-10-21T00:00:00+00:00, execution_date=20241021T000000, start_date=20241022T081654, end_date=20241022T081705
+[2024-10-22T08:17:05.055+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 39 for task stream_data_from_api (NoBrokersAvailable; 227)
+[2024-10-22T08:17:05.088+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-22T08:17:05.122+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-22T08:17:05.128+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

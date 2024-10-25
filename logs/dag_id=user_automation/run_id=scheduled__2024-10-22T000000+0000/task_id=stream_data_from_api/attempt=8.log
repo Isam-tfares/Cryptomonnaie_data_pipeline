@@ -1,0 +1,57 @@
+[2024-10-23T12:57:13.738+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-23T12:57:13.912+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api scheduled__2024-10-22T00:00:00+00:00 [queued]>
+[2024-10-23T12:57:13.955+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api scheduled__2024-10-22T00:00:00+00:00 [queued]>
+[2024-10-23T12:57:13.962+0000] {taskinstance.py:2306} INFO - Starting attempt 8 of 8
+[2024-10-23T12:57:14.053+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2024-10-22 00:00:00+00:00
+[2024-10-23T12:57:14.092+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'user_automation', 'stream_data_from_api', 'scheduled__2024-10-22T00:00:00+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/kafka_stream.py', '--cfg-path', '/tmp/tmpw89h04fh']
+[2024-10-23T12:57:14.115+0000] {standard_task_runner.py:91} INFO - Job 121: Subtask stream_data_from_api
+[2024-10-23T12:57:14.125+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=749) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-23T12:57:14.138+0000] {standard_task_runner.py:64} INFO - Started process 750 to run task
+[2024-10-23T12:57:14.472+0000] {task_command.py:426} INFO - Running <TaskInstance: user_automation.stream_data_from_api scheduled__2024-10-22T00:00:00+00:00 [running]> on host 99d2c9a4153a
+[2024-10-23T12:57:15.050+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='user_automation' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2024-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-22T00:00:00+00:00'
+[2024-10-23T12:57:15.051+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-23T12:57:16.031+0000] {conn.py:362} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+[2024-10-23T12:57:16.032+0000] {conn.py:957} INFO - Probing node bootstrap-0 broker version
+[2024-10-23T12:57:16.033+0000] {conn.py:402} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]> returned error 111. Disconnecting.
+[2024-10-23T12:57:16.034+0000] {conn.py:673} ERROR - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2024-10-23T12:57:16.082+0000] {conn.py:362} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+[2024-10-23T12:57:16.084+0000] {conn.py:402} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]> returned error 111. Disconnecting.
+[2024-10-23T12:57:16.085+0000] {conn.py:673} ERROR - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2024-10-23T12:57:16.134+0000] {conn.py:362} INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+[2024-10-23T12:57:16.136+0000] {conn.py:402} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+[2024-10-23T12:57:16.137+0000] {conn.py:673} ERROR - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2024-10-23T12:57:16.138+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-23T12:57:16.140+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/kafka_stream.py", line 44, in stream_data
+    producer = KafkaProducer(bootstrap_servers='localhost:9092', max_block_ms=5000)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kafka/producer/kafka.py", line 383, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kafka/client_async.py", line 234, in __init__
+    self.config['api_version'] = self.check_version(timeout=check_timeout)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kafka/client_async.py", line 902, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2024-10-23T12:57:16.186+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=user_automation, task_id=stream_data_from_api, run_id=scheduled__2024-10-22T00:00:00+00:00, execution_date=20241022T000000, start_date=20241023T125713, end_date=20241023T125716
+[2024-10-23T12:57:16.322+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 121 for task stream_data_from_api (NoBrokersAvailable; 750)
+[2024-10-23T12:57:16.383+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-10-23T12:57:16.435+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-23T12:57:16.444+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
