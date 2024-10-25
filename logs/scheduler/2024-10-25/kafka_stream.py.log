@@ -613,3 +613,434 @@
 [2024-10-25T15:16:36.867+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:16:36.867+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-10-25T15:16:36.900+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:16:36.900+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
 [2024-10-25T15:16:36.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.392 seconds
+[2024-10-25T15:17:07.209+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:17:07.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:17:07.212+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:17:07.212+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:17:07.419+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:17:07.459+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:17:07.459+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:17:07.489+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:17:07.489+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:17:07.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.326 seconds
+[2024-10-25T15:17:37.925+0000] {processor.py:161} INFO - Started process (PID=801) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:17:37.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:17:37.928+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:17:37.928+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:17:38.141+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:17:38.185+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:17:38.185+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:17:38.227+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:17:38.227+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:17:38.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.347 seconds
+[2024-10-25T15:18:08.580+0000] {processor.py:161} INFO - Started process (PID=812) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:18:08.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:18:08.584+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:18:08.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:18:08.797+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:18:08.835+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:18:08.835+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:18:08.874+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:18:08.873+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:18:08.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.331 seconds
+[2024-10-25T15:18:39.266+0000] {processor.py:161} INFO - Started process (PID=824) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:18:39.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:18:39.272+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:18:39.271+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:18:39.448+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:18:39.482+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:18:39.482+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:18:39.512+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:18:39.512+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:18:39.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.284 seconds
+[2024-10-25T15:19:09.876+0000] {processor.py:161} INFO - Started process (PID=835) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:19:09.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:19:09.882+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:19:09.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:19:10.064+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:19:10.099+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:19:10.098+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:19:10.127+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:19:10.126+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:19:10.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.290 seconds
+[2024-10-25T15:19:40.557+0000] {processor.py:161} INFO - Started process (PID=846) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:19:40.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:19:40.562+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:19:40.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:19:40.750+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:19:40.787+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:19:40.787+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:19:40.818+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:19:40.818+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:19:40.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.297 seconds
+[2024-10-25T15:20:11.167+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:20:11.168+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:20:11.172+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:20:11.171+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:20:11.417+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:20:11.466+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:20:11.466+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:20:11.508+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:20:11.507+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:20:11.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.388 seconds
+[2024-10-25T15:20:41.869+0000] {processor.py:161} INFO - Started process (PID=868) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:20:41.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:20:41.876+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:20:41.875+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:20:42.082+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:20:42.120+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:20:42.119+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:20:42.155+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:20:42.155+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:20:42.189+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.327 seconds
+[2024-10-25T15:21:12.445+0000] {processor.py:161} INFO - Started process (PID=879) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:21:12.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:21:12.449+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:21:12.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:21:12.626+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:21:12.662+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:21:12.661+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:21:12.698+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:21:12.697+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:21:12.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.293 seconds
+[2024-10-25T15:21:42.801+0000] {processor.py:161} INFO - Started process (PID=891) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:21:42.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:21:42.806+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:21:42.805+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:21:43.076+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:21:43.125+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:21:43.124+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:21:43.173+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:21:43.173+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:21:43.214+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.427 seconds
+[2024-10-25T15:22:13.428+0000] {processor.py:161} INFO - Started process (PID=902) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:22:13.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:22:13.433+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:22:13.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:22:13.677+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:22:13.730+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:22:13.730+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:22:13.772+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:22:13.771+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:22:13.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.402 seconds
+[2024-10-25T15:22:44.423+0000] {processor.py:161} INFO - Started process (PID=912) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:22:44.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:22:44.448+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:22:44.447+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:22:44.905+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:22:44.938+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:22:44.937+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:22:44.970+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:22:44.969+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:22:44.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.599 seconds
+[2024-10-25T15:23:15.575+0000] {processor.py:161} INFO - Started process (PID=923) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:23:15.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:23:15.582+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:15.581+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:23:15.804+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:23:16.190+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:16.188+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:crypto_price_monitoring
+[2024-10-25T15:23:16.222+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:16.221+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:crypto_price_monitoring
+[2024-10-25T15:23:16.239+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:16.239+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:crypto_price_monitoring
+[2024-10-25T15:23:16.240+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:16.240+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:23:16.256+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:16.256+0000] {dag.py:3111} INFO - Creating ORM DAG for crypto_price_monitoring
+[2024-10-25T15:23:16.273+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:16.272+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:23:16.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.746 seconds
+[2024-10-25T15:23:46.783+0000] {processor.py:161} INFO - Started process (PID=934) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:23:46.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:23:46.787+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:46.787+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:23:46.963+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:23:46.996+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:46.995+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:23:47.025+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:23:47.025+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:23:47.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.280 seconds
+[2024-10-25T15:24:17.259+0000] {processor.py:161} INFO - Started process (PID=945) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:24:17.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:24:17.262+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:24:17.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:24:17.441+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:24:17.472+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:24:17.472+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:24:17.502+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:24:17.501+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:24:17.537+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.285 seconds
+[2024-10-25T15:24:47.653+0000] {processor.py:161} INFO - Started process (PID=955) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:24:47.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:24:47.656+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:24:47.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:24:47.924+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:24:47.977+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:24:47.976+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:24:48.022+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:24:48.021+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:24:48.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.423 seconds
+[2024-10-25T15:25:18.141+0000] {processor.py:161} INFO - Started process (PID=966) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:25:18.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:25:18.146+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:25:18.146+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:25:18.431+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:25:18.604+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:25:18.604+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:25:18.661+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:25:18.660+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:25:18.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.568 seconds
+[2024-10-25T15:25:48.776+0000] {processor.py:161} INFO - Started process (PID=984) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:25:48.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:25:48.780+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:25:48.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:25:49.056+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:25:49.110+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:25:49.110+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:25:49.179+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:25:49.179+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:25:49.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.521 seconds
+[2024-10-25T15:26:19.625+0000] {processor.py:161} INFO - Started process (PID=995) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:26:19.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:26:19.628+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:26:19.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:26:19.806+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:26:19.840+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:26:19.840+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:26:19.871+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:26:19.871+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:26:19.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.290 seconds
+[2024-10-25T15:26:49.982+0000] {processor.py:161} INFO - Started process (PID=1007) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:26:49.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:26:49.988+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:26:49.988+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:26:50.235+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:26:50.280+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:26:50.279+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:26:50.343+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:26:50.342+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:26:50.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.404 seconds
+[2024-10-25T15:27:20.523+0000] {processor.py:161} INFO - Started process (PID=1018) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:27:20.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:27:20.526+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:27:20.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:27:20.745+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:27:20.781+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:27:20.781+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:27:20.814+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:27:20.814+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:27:20.844+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.330 seconds
+[2024-10-25T15:27:50.924+0000] {processor.py:161} INFO - Started process (PID=1030) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:27:50.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:27:50.927+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:27:50.927+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:27:51.138+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:27:51.174+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:27:51.174+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:27:51.215+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:27:51.215+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:27:51.247+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.330 seconds
+[2024-10-25T15:28:21.446+0000] {processor.py:161} INFO - Started process (PID=1041) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:28:21.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:28:21.449+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:28:21.449+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:28:21.690+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:28:21.730+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:28:21.729+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:28:21.771+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:28:21.771+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:28:21.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.381 seconds
+[2024-10-25T15:28:52.379+0000] {processor.py:161} INFO - Started process (PID=1052) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:28:52.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:28:52.383+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:28:52.382+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:28:52.630+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:28:52.671+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:28:52.670+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:28:52.703+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:28:52.702+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:28:52.736+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.370 seconds
+[2024-10-25T15:29:23.137+0000] {processor.py:161} INFO - Started process (PID=1064) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:23.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:29:23.139+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:23.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:23.340+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_monitoring' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:23.374+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:23.374+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:29:23.412+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:23.411+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_monitoring to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:29:23.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.316 seconds
+[2024-10-25T15:29:27.328+0000] {processor.py:161} INFO - Started process (PID=1069) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:27.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:29:27.332+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:27.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:27.567+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:27.756+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:27.756+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:29:27.791+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:27.791+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:29:27.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.513 seconds
+[2024-10-25T15:29:58.168+0000] {processor.py:161} INFO - Started process (PID=1081) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:58.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:29:58.171+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:58.171+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:58.358+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:29:58.395+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:58.394+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:29:58.439+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:29:58.439+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:29:58.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.320 seconds
+[2024-10-25T15:30:28.819+0000] {processor.py:161} INFO - Started process (PID=1092) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:30:28.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:30:28.822+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:30:28.822+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:30:29.036+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:30:29.083+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:30:29.083+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:30:29.128+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:30:29.127+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:30:29.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.349 seconds
+[2024-10-25T15:30:59.563+0000] {processor.py:161} INFO - Started process (PID=1103) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:30:59.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:30:59.565+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:30:59.565+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:30:59.774+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:30:59.819+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:30:59.819+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:30:59.867+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:30:59.867+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:30:59.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.349 seconds
+[2024-10-25T15:31:30.162+0000] {processor.py:161} INFO - Started process (PID=1114) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:31:30.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:31:30.165+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:31:30.165+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:31:30.401+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:31:30.439+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:31:30.439+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:31:30.471+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:31:30.470+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:31:30.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.347 seconds
+[2024-10-25T15:32:01.176+0000] {processor.py:161} INFO - Started process (PID=1125) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:32:01.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:32:01.182+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:32:01.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:32:01.923+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:32:02.026+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:32:02.025+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:32:02.179+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:32:02.179+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:32:02.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 1.105 seconds
+[2024-10-25T15:32:32.559+0000] {processor.py:161} INFO - Started process (PID=1136) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:32:32.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:32:32.562+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:32:32.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:32:32.828+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:32:32.874+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:32:32.874+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:32:32.919+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:32:32.918+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:32:32.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.405 seconds
+[2024-10-25T15:33:03.522+0000] {processor.py:161} INFO - Started process (PID=1147) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:03.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:33:03.525+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:03.525+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:03.728+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:03.772+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:03.771+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:33:03.813+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:03.812+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:33:03.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.339 seconds
+[2024-10-25T15:33:34.187+0000] {processor.py:161} INFO - Started process (PID=1158) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:34.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:33:34.192+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:34.191+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:34.468+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:34.520+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:34.520+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:33:34.598+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:34.597+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:33:34.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.528 seconds
+[2024-10-25T15:33:55.395+0000] {processor.py:161} INFO - Started process (PID=1169) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:55.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:33:55.417+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:55.416+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:56.041+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:33:56.098+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:56.097+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:33:56.158+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:33:56.157+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:33:56.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.851 seconds
+[2024-10-25T15:34:26.748+0000] {processor.py:161} INFO - Started process (PID=1179) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:34:26.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:34:26.751+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:34:26.751+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:34:26.947+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:34:26.990+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:34:26.990+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:34:27.037+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:34:27.037+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-26 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-25T15:34:27.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.393 seconds
+[2024-10-25T15:34:44.490+0000] {processor.py:161} INFO - Started process (PID=1184) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:34:44.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:34:44.494+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:34:44.493+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:34:45.074+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:34:45.232+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:34:45.231+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:34:45.260+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:34:45.260+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:34:45.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.843 seconds
+[2024-10-25T15:35:15.728+0000] {processor.py:161} INFO - Started process (PID=1195) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:35:15.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:35:15.731+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:35:15.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:35:15.917+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:35:15.962+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:35:15.962+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:35:16.002+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:35:16.002+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:35:16.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.315 seconds
+[2024-10-25T15:35:46.535+0000] {processor.py:161} INFO - Started process (PID=1206) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:35:46.537+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:35:46.538+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:35:46.538+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:35:46.733+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:35:46.773+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:35:46.772+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:35:46.810+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:35:46.810+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:35:46.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.320 seconds
+[2024-10-25T15:36:16.987+0000] {processor.py:161} INFO - Started process (PID=1217) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:36:16.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:36:17.002+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:36:17.001+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:36:17.354+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:36:17.393+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:36:17.393+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:36:17.429+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:36:17.428+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:36:17.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.493 seconds
+[2024-10-25T15:36:47.602+0000] {processor.py:161} INFO - Started process (PID=1228) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:36:47.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:36:47.605+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:36:47.605+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:36:47.887+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:36:47.923+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:36:47.923+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:36:47.965+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:36:47.964+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:36:48.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.422 seconds
+[2024-10-25T15:37:18.207+0000] {processor.py:161} INFO - Started process (PID=1240) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:37:18.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:37:18.211+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:37:18.211+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:37:18.405+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:37:18.444+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:37:18.443+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:37:18.480+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:37:18.480+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:37:18.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.320 seconds
+[2024-10-25T15:37:48.814+0000] {processor.py:161} INFO - Started process (PID=1254) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:37:48.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:37:48.816+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:37:48.816+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:37:49.034+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:37:49.073+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:37:49.072+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:37:49.107+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:37:49.107+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:37:49.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.344 seconds
+[2024-10-25T15:38:19.480+0000] {processor.py:161} INFO - Started process (PID=1265) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:38:19.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:38:19.483+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:38:19.482+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:38:19.683+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:38:19.717+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:38:19.717+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:38:19.750+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:38:19.750+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:38:19.783+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.311 seconds
+[2024-10-25T15:38:50.115+0000] {processor.py:161} INFO - Started process (PID=1276) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:38:50.117+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:38:50.118+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:38:50.118+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:38:50.320+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:38:50.354+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:38:50.353+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:38:50.382+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:38:50.382+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:38:50.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.303 seconds
+[2024-10-25T15:39:20.568+0000] {processor.py:161} INFO - Started process (PID=1293) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:39:20.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:39:20.572+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:39:20.572+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:39:20.788+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:39:20.822+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:39:20.822+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:39:20.851+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:39:20.851+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:39:20.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.326 seconds
+[2024-10-25T15:39:51.159+0000] {processor.py:161} INFO - Started process (PID=1305) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:39:51.160+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:39:51.161+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:39:51.161+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:39:51.347+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:39:51.393+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:39:51.393+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:39:51.431+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:39:51.431+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:39:51.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.475 seconds
+[2024-10-25T15:40:22.223+0000] {processor.py:161} INFO - Started process (PID=1315) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:40:22.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:40:22.227+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:40:22.226+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:40:22.639+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:40:22.683+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:40:22.683+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:40:22.729+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:40:22.729+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:40:22.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.548 seconds
+[2024-10-25T15:40:53.210+0000] {processor.py:161} INFO - Started process (PID=1326) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:40:53.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:40:53.213+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:40:53.212+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:40:53.431+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:40:53.469+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:40:53.468+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:40:53.507+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:40:53.507+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:40:53.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.347 seconds
+[2024-10-25T15:41:24.045+0000] {processor.py:161} INFO - Started process (PID=1337) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:41:24.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:41:24.047+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:41:24.047+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:41:24.246+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:41:24.280+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:41:24.280+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:41:24.318+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:41:24.318+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:41:24.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.315 seconds
+[2024-10-25T15:41:54.678+0000] {processor.py:161} INFO - Started process (PID=1348) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:41:54.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:41:54.682+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:41:54.682+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:41:54.975+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:41:55.037+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:41:55.036+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:41:55.151+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:41:55.150+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:41:55.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.544 seconds
+[2024-10-25T15:42:25.711+0000] {processor.py:161} INFO - Started process (PID=1359) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:42:25.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:42:25.715+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:42:25.714+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:42:25.978+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:42:26.027+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:42:26.027+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:42:26.068+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:42:26.068+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:42:26.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.401 seconds
+[2024-10-25T15:42:56.446+0000] {processor.py:161} INFO - Started process (PID=1370) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:42:56.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:42:56.449+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:42:56.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:42:56.629+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:42:56.670+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:42:56.670+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:42:56.706+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:42:56.706+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:42:56.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.298 seconds
+[2024-10-25T15:43:26.857+0000] {processor.py:161} INFO - Started process (PID=1381) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:43:26.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:43:26.859+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:43:26.859+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:43:27.043+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:43:27.076+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:43:27.076+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:43:27.103+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:43:27.103+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:43:27.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.292 seconds
+[2024-10-25T15:43:57.310+0000] {processor.py:161} INFO - Started process (PID=1391) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:43:57.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:43:57.316+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:43:57.315+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:43:57.673+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:43:57.728+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:43:57.727+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:43:57.794+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:43:57.792+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:43:57.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.541 seconds
+[2024-10-25T15:44:28.020+0000] {processor.py:161} INFO - Started process (PID=1403) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:44:28.022+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:44:28.029+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:44:28.026+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:44:28.422+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:44:28.670+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:44:28.669+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:44:28.788+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:44:28.787+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:44:28.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.949 seconds
+[2024-10-25T15:45:07.988+0000] {processor.py:161} INFO - Started process (PID=1408) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:45:08.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:45:08.027+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:45:08.026+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:45:24.836+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:45:25.538+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:45:25.538+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:45:25.784+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:45:25.783+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:45:25.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 20.201 seconds
+[2024-10-25T15:45:56.220+0000] {processor.py:161} INFO - Started process (PID=1418) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:45:56.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:45:56.224+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:45:56.223+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:45:56.619+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:45:57.004+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:45:57.004+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:45:57.032+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:45:57.032+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:45:57.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.862 seconds
+[2024-10-25T15:46:27.485+0000] {processor.py:161} INFO - Started process (PID=1434) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:46:27.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:46:27.489+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:46:27.488+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:46:27.703+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:46:27.749+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:46:27.748+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:46:27.793+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:46:27.792+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:46:27.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.404 seconds
+[2024-10-25T15:46:58.229+0000] {processor.py:161} INFO - Started process (PID=1445) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:46:58.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:46:58.232+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:46:58.232+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:46:58.403+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:46:58.435+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:46:58.435+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:46:58.464+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:46:58.464+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:46:58.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.273 seconds
+[2024-10-25T15:47:28.590+0000] {processor.py:161} INFO - Started process (PID=1456) to work on /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:47:28.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kafka_stream.py for tasks to queue
+[2024-10-25T15:47:28.594+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:47:28.593+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:47:28.793+0000] {processor.py:840} INFO - DAG(s) 'crypto_price_automation' retrieved from /opt/airflow/dags/kafka_stream.py
+[2024-10-25T15:47:28.827+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:47:28.827+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-25T15:47:28.859+0000] {logging_mixin.py:188} INFO - [2024-10-25T15:47:28.859+0000] {dag.py:3947} INFO - Setting next_dagrun for crypto_price_automation to 2024-10-25 00:00:00+00:00, run_after=2024-10-26 00:00:00+00:00
+[2024-10-25T15:47:28.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kafka_stream.py took 0.306 seconds

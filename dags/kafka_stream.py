@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 import requests
 import logging
 import json
@@ -12,61 +12,77 @@ from airflow.operators.python import PythonOperator
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# List of cryptocurrency symbols you want to fetch
-CRYPTO_SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'LTCUSDT', 'XRPUSDT', 'DOGEUSDT']
+# List of cryptocurrency symbols to monitor
+CRYPTO_SYMBOLS = [
+    'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'LTCUSDT', 'XRPUSDT', 'DOGEUSDT',
+    'ADAUSDT', 'SOLUSDT', 'DOTUSDT', 'MATICUSDT',
+    'AVAXUSDT', 'SHIBUSDT', 'ATOMUSDT', 'LINKUSDT', 'TRXUSDT',
+    'UNIUSDT', 'XLMUSDT', 'FTMUSDT', 'NEARUSDT', 'ICPUSDT',
+    'FILUSDT', 'ALGOUSDT', 'HBARUSDT', 'SANDUSDT', 'MANAUSDT',
+    'VETUSDT', 'XTZUSDT', 'THETAUSDT', 'AXSUSDT', 'FTTUSDT'
+]
 
-# Maintain the last fetched date for each coin
-last_fetched = {symbol: None for symbol in CRYPTO_SYMBOLS}
 
-def fetch_crypto_prices():
-    prices = []
+# Dictionary to keep track of the last price for each symbol
+last_prices = {symbol: None for symbol in CRYPTO_SYMBOLS}
+
+def fetch_and_compare_prices():
+    changed_prices = []
     current_date = datetime.utcnow().date()
 
     for symbol in CRYPTO_SYMBOLS:
-        if last_fetched[symbol] == current_date:
-            continue  # Skip if already fetched today
-
         try:
-            # Make a request to the Binance API
+            # Fetch the latest data from Binance API
             response = requests.get(f'https://api.binance.com/api/v3/klines?symbol={symbol}&interval=1d&limit=1')
             response.raise_for_status()
             data = response.json()
 
             if data:
-                price_info = {
-                    'symbol': symbol,
-                    'date': current_date.strftime('%Y-%m-%d'),
-                    'open': float(data[0][1]),
-                    'high': float(data[0][2]),
-                    'low': float(data[0][3]),
-                    'close': float(data[0][4]),
-                    'volume': float(data[0][5])
-                }
+                # Extract the latest close price
+                latest_close_price = float(data[0][4])
 
-                prices.append(price_info)
-                last_fetched[symbol] = current_date  # Update the last fetched date
+                # Check if the price has changed compared to the last stored price
+                if last_prices[symbol] is None or last_prices[symbol] != latest_close_price:
+                    price_info = {
+                        'symbol': symbol,
+                        'date': current_date.strftime('%Y-%m-%d'),
+                        'open': float(data[0][1]),
+                        'high': float(data[0][2]),
+                        'low': float(data[0][3]),
+                        'close': latest_close_price,
+                        'volume': float(data[0][5])
+                    }
+
+                    # Store the new price as the last fetched price
+                    last_prices[symbol] = latest_close_price
+                    changed_prices.append(price_info)  # Add only if price has changed
 
         except Exception as e:
             logger.error(f"Error fetching data for {symbol}: {e}")
 
-    return prices
+    return changed_prices  # Only return prices that changed
 
-def stream_data():
+def stream_data_on_price_change():
     producer = KafkaProducer(bootstrap_servers='kafka:9093', max_block_ms=5000)
-    prices = fetch_crypto_prices()
 
-    for price in prices:
-        try:
-            producer.send('crypto_prices', json.dumps(price).encode('utf-8')) #cryptocurrency_prices
-            logger.info(f"Data sent to Kafka: {price} on topic 'crypto_prices'")
-            time.sleep(random.uniform(0.5, 2.0))  # Sleep between sends
-        except Exception as e:
-            logger.error(f'An error occurred while sending data: {e}')
+    while True:  # Continuous fetch loop
+        changed_prices = fetch_and_compare_prices()
 
+        for price in changed_prices:
+            try:
+                # Send data to Kafka only if price has changed
+                producer.send('crypto_prices', json.dumps(price).encode('utf-8'))
+                logger.info(f"Data sent to Kafka: {price} on topic 'crypto_prices'")
+            except Exception as e:
+                logger.error(f"Error sending data to Kafka for {price['symbol']}: {e}")
 
+        # Delay between fetches to avoid overwhelming the API
+        time.sleep(random.uniform(5, 15))  # Adjust time as needed for your use case
+
+# Define Airflow DAG
 default_args = {
     'owner': 'admin',
-    'start_date': datetime(2024, 10, 25, 10, 00)
+    'start_date': datetime(2024, 10, 24, 10, 00)
 }
 with DAG('crypto_price_automation',
          default_args=default_args,
@@ -74,7 +90,6 @@ with DAG('crypto_price_automation',
          catchup=False) as dag:
 
     streaming_task = PythonOperator(
-        task_id='stream_crypto_prices',
-        python_callable=stream_data
+        task_id='stream_crypto_prices_on_change',
+        python_callable=stream_data_on_price_change
     )
-

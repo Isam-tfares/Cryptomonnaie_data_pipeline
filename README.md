@@ -1,5 +1,5 @@
 
-**This repository demonstrates a data engineering pipeline using Spark Structured Streaming. It retrieves random names from an API, sends the data to Kafka topics via Airflow, and processes it with Spark Structured Streaming before storing it in Cassandra.**
+**This repository demonstrates a data engineering pipeline for managing cryptocurrency data. It retrieves real-time crypto data from an API, sends the data to Kafka topics via Airflow, processes it with Spark Structured Streaming, and stores it in a Cassandra database.**
 
 # System Architecture
 
@@ -7,14 +7,14 @@
 
 ## Components:
 
-**Data Source:** Uses the randomuser.me API for generating user data. \
+**Data Source:** Uses a cryptocurrency data API to generate real-time data. \
 **Apache Airflow:** Orchestrates the pipeline and schedules data ingestion. \
 **Apache Kafka & Zookeeper:** Stream data from PostgreSQL to Spark. \
 **Apache Spark:** Processes data in real time. \
 **Cassandra:** Stores the processed data. \
 **Scripts:**
 
-**kafka_stream.py:** Airflow DAG script that pushes API data to Kafka during 2 minutes every 1 seconds. \
+**kafka_stream.py:** Airflow DAG script that pushes API data to Kafka if a price was changing \
 **spark_stream.py:** Consumes and processes data from Kafka using Spark Structured Streaming. 
 
 ## What You'll Learn:
@@ -37,7 +37,7 @@ Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, Cassandra,
 
 ### Clone the repository:
 
-`$ git clone https://github.com/akarce/e2e-structured-streaming.git`
+`$ git clone https://github.com/akarce/Cryptomonnaie_data_pipeline`
 
 ### Navigate to the project directory:
 
