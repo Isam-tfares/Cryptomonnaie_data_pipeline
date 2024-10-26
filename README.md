@@ -3,7 +3,7 @@
 
 # System Architecture
 
-![alt text](img/architecture.jpg)
+![alt text](img/architecture.png)
 
 ## Components:
 
@@ -82,13 +82,13 @@ Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, Cassandra,
 
 ![cqlsh no keyspace](img/cqlsh_no_keyspace.png)
 
-### Unpause the dag user_automation using Airflow UI
+### Unpause the dag crypto_price_automation using Airflow UI
 
 **Go to Airflow UI using :** <http://localhost:8080/>
 
 **Login using** Username: `admin` Password: `admin`
 
-![unpause the user_automation](img/unpause_user_automation.png)
+![unpause the crypto_price_automation](img/unpause_crypto_price_automation.png)
 
 **You can track the topic creation and message queue using the open source tool named UI for Apache Kafka that is running as a container, WebUI link:**  <http://localhost:8085/>
 
@@ -105,12 +105,12 @@ Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, Cassandra,
 
 ### Now go back to the cqlsh shell terminal back and run the command to see data is inserted to cassandra table called created_users
 
-`cqlsh> SELECT * FROM spark_streaming.created_users;`
+`cqlsh> SELECT * FROM crypto_data.daily_prices;`
 
-![alt text](img/created_users.png)
+![alt text](img/crypto_data.png)
 
-#### and run count query several times to approve data is being inserted while running user_automation dag
+#### and run count query several times to approve data is being inserted while running crypto_price_automation dag
 
-`cqlsh> SELECT count(*) FROM spark_streaming.created_users;`
+`cqlsh> SELECT count(*) FROM crypto_data.daily_prices;`
 
-![alt text](img/count-created-users.png)
+![alt text](img/count-crypto_data.png)
